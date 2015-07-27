@@ -1,0 +1,18 @@
+%nav.navbar.navbar-default.navbar-fixed-top
+  .container
+    .navbar-header
+      .navbar-brand
+        = 'The Bookstore'
+    %ul.nav.navbar-nav
+      %li 
+        = link_to 'HOME', home_path
+      %li.divider{role:"separator"}
+      %li
+        = link_to 'SHOP', shop_path
+    %ul.nav.navbar-nav
+      %li
+        = link_to 'cart'
+    %ul.nav.navbar-nav.navbar-right
+      %li= link_to 'Settings'
+      %li= link_to 'Orders'
+      %li= link_to 'Sign out'

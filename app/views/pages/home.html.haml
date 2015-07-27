@@ -1,0 +1,9 @@
+#home.container
+  .row
+    -Book.all.each do |book|
+      .row
+        = book.title
+        = "by #{book.author.first_name} #{book.author.last_name}"
+        = book.description
+        = "$#{book.price}"
+    = "Welcome to our amazing Bookstore! Choose anything you wish, we`ll ship it anywhere!"
