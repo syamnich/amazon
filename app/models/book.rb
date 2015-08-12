@@ -5,4 +5,6 @@ class Book < ActiveRecord::Base
 	belongs_to :category
 
 	has_many :ratings
+
+	mount_uploader :cover, CoverUploader
 end

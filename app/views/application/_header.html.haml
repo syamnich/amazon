@@ -1,15 +1,15 @@
-%nav.navbar.navbar-default.navbar-fixed-top
-  .container
+#navbar
+  %nav.navbar.navbar-inverse.navbar-fixed-top
     .navbar-header
       .navbar-brand
         = 'The Bookstore'
     %ul.nav.navbar-nav
-      %li 
+      %li
         = link_to 'HOME', home_path
-      %li.divider{role:"separator"}
+      %li.divider-vertical
       %li
         = link_to 'SHOP', shop_path
-    %ul.nav.navbar-nav
+    %ul.nav.navbar-nav#cart
       %li
         = link_to 'cart'
     %ul.nav.navbar-nav.navbar-right

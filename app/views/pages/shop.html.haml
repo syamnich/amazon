@@ -1,0 +1,6 @@
+#shop.container
+  .books
+    -Book.all.each do |book|
+      = book.title
+      = "by #{book.author.first_name} #{book.author.last_name}"
+      = "$#{book.price}"

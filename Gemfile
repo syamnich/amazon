@@ -1,3 +1,4 @@
+
 source 'https://rubygems.org'
 
 
@@ -27,6 +28,8 @@ gem 'pg', '~> 0.18.2'
 gem 'haml-rails'
 gem 'font-awesome-rails'
 gem 'bootstrap-sass'
+gem 'carrierwave'
+gem 'mini_magick'
 
 
 group :development, :test do
