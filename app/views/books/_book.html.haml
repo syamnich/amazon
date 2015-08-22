@@ -1,0 +1,15 @@
+.row.book
+  .row.title-line  
+    .col-lg-4.title
+      = link_to book.title, book_path(book)
+    .col-lg-8
+      = by_author(book)
+  .row.book-details
+    .col-lg-2
+      %img(src="#{book.cover.medium.url}")
+    .col-lg-10
+      = book.description
+  .row
+    .col-lg-2
+    .col-lg-10
+      = "$#{book.price}"

@@ -1,0 +1,21 @@
+#home{
+  width: 700px;
+  .books{
+    margin-top: 80px;
+  }
+  .title-line, .book-details{
+  	margin-bottom: 20px;
+  }
+  .book{
+  	margin-bottom: 30px;
+  }
+  .title{
+  	font-weight: bold;
+  	font-size: 18px;
+  }
+  .welcome{
+  	text-align: center;
+  	font-size: 18px;
+  	font-weight: bold;
+  }
+}

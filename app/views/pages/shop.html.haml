@@ -1,6 +1,7 @@
 #shop.container
   .books
     -Book.all.each do |book|
+      %img(src="#{book.cover.medium.url}")
       = book.title
       = "by #{book.author.first_name} #{book.author.last_name}"
       = "$#{book.price}"

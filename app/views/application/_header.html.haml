@@ -2,17 +2,18 @@
   %nav.navbar.navbar-inverse.navbar-fixed-top
     .navbar-header
       .navbar-brand
-        = 'The Bookstore'
+        = link_to 'The Bookstore', home_path
     %ul.nav.navbar-nav
       %li
         = link_to 'HOME', home_path
       %li.divider-vertical
       %li
-        = link_to 'SHOP', shop_path
+        = link_to 'SHOP', books_path
     %ul.nav.navbar-nav#cart
       %li
-        = link_to 'cart'
-    %ul.nav.navbar-nav.navbar-right
+        %i.icon-search.icon-white
+        = link_to 'CART'
+    %ul.nav.navbar-nav.navbar-right.user-menu
       %li= link_to 'Settings'
       %li= link_to 'Orders'
       %li= link_to 'Sign out'
